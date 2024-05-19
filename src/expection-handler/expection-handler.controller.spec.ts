@@ -9,7 +9,9 @@ describe('ExpectionHandlerController', () => {
       controllers: [ExpectionHandlerController],
     }).compile();
 
-    controller = module.get<ExpectionHandlerController>(ExpectionHandlerController);
+    controller = module.get<ExpectionHandlerController>(
+      ExpectionHandlerController,
+    );
   });
 
   it('should be defined', () => {
